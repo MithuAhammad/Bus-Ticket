@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus-Ticket</title>
 
-
     <link rel="stylesheet" href="Styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -13,43 +12,124 @@
       rel="stylesheet"
       type="text/css"
     />
-    
+
     <!-- Js scripts -->
     <script src="Scripts/scripts.js"></script>
   </head>
   <body>
-    <header>
-        <section>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">P-Ticker</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                </ul>
-                </div>
-                <div class="navbar-end ">
-                  <a class="btn bg-green-300 text-green-600">Bus <span><img src="./images/bus-icon.png" alt=""></span></a>
-                </div>
+    <header class="mx-8">
+      <section>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </section>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">P-Ticker</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-green-300 text-green-600"
+              >Bus <span><img src="./images/bus-icon.png" alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="rounded-2xl">
+        <div
+          class="hero min-h-screen"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">End-to-End Travel With</h1>
+              <h1 class="text-green-600 text-4xl font-bold">P Paribahan</h1>
+              <p class="mb-5">
+                Embarking on a seamless end-to-end travel experience begins with
+                meticulous planning and organization. As the journey unfolds,
+                the initial step involves thorough research to select optimal
+                destinations, accommodations, and transportation modes.
+              </p>
+              <button class="btn text-white bg-green-500 font-bold">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main class="mx-8">
+        <h1 class="text-center text-4xl font-extrabold mt-24 mb-12">Best offers for you</h1>
+
+        <div class="flex grid md:grid-cols-2 gap-2 justify-between">
+             <section class="flex rounded-xl justify-evenly bg-yellow-400">
+                  <div class="mt-16 text-center">
+                    <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
+                    <p class="text-black text-xl font-bold ">on your next purchase</p>
+                    <p class="text-black">use by January 2024</p>
+                  </div>
+                  <img src="images/cupon-devider.png" alt="" />
+                  <div class="">
+                    <h1 class="text-zinc-950 text-3xl font-bold mt-20">NEW15</h1>
+                    <p class="text-zinc-800">Coupon Code</p>
+                  </div>
+                </section>
+              </section>
+        
+              
+                <section class="flex justify-evenly bg-pink-400 rounded-xl">
+                  <div class="mt-16 text-center">
+                    <h1 class="text-black font-extrabold text-4xl">20% OFF</h1>
+                    <p class="text-black text-xl font-bold">on your next purchase</p>
+                    <p class="text-black">use by January 2024</p>
+                  </div>
+                  <img src="images/cupon-devider.png" alt="" />
+                  <div class="mt-16 text-center">
+                    <h1 class="text-zinc-950 text-3xl font-bold mt-2">Couple 20</h1>
+                    <p class="text-zinc-700">Coupon Code</p>
+                  </div>
+                </section>
+            
+        </div>
+      <div class="text-center mt-9">
+        <button
+        class="btn bg-white text-green-400 border-green-400"
+      >
+        See All Offers
+      </button>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
