@@ -15,9 +15,11 @@
 
     <!-- Js scripts -->
     <script src="Scripts/scripts.js"></script>
+
   </head>
   <body>
     <header class="mx-8">
+        <!-- NAvigation-Section -->
       <section>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -65,6 +67,7 @@
           </div>
         </div>
       </section>
+       <!-- End-to-End Travel With -->
       <section class="rounded-2xl">
         <div
           class="hero min-h-screen"
@@ -81,18 +84,58 @@
                 the initial step involves thorough research to select optimal
                 destinations, accommodations, and transportation modes.
               </p>
-              <button class="btn text-white bg-green-500 font-bold">
+              <button class="btn text-white bg-green-500 font-bold" onClick="document.getElementById('middle').scrollIntoView();">
                 Buy Tickets
               </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Optional part -->
+      <div class="flex -mt-12 justify-center">
+        <section class="mr-4">
+            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+                <div class="">
+                    <img src="images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-black text-2xl">500K+</h1>
+                    <p>Registered</p>
+                </div>
+            </div>
+          </section>
+        <section class="mr-4 ">
+            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+                <div>
+                    <img src="images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-black">500K+</h1>
+                    <p>Registered</p>
+                </div>
+            </div>
+          </section>
+        <section>
+            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+                <div>
+                    <img src="images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-black">500K+</h1>
+                    <p>Registered</p>
+                </div>
+            </div>
+          </section>
+      </div>
+
     </header>
+        <!-- Best Offers Options -->
     <main class="mx-8">
+        
         <h1 class="text-center text-4xl font-extrabold mt-24 mb-12">Best offers for you</h1>
 
-        <div class="flex grid md:grid-cols-2 gap-2 justify-between">
+        <div class="grid md:grid-cols-2 gap-6">
              <section class="flex rounded-xl justify-evenly bg-yellow-400">
                   <div class="mt-16 text-center">
                     <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
@@ -129,6 +172,38 @@
         See All Offers
       </button>
       </div>
+
+
+      <section class="bg-[#F7F8F8]">
+        <div>
+            <h1 class="text-4xl font-bold text-center mt-14">P.H Paribahan</h1>
+        <p class="text-center">Choosing a destination and the right bus is key to a smooth journey, ensuring convenience, efficiency, and a pleasant </p>
+        </div>
+
+        <div class="flex justify-between bg-white">
+            <div class="">
+                <div class="flex gap-3 mt-16">
+                   <div>
+                    <img src="images/bus-logo.png" alt="">
+                   </div>
+                  <div>
+                    <h1 class="font-bold">GreenLine Paribahan</h1>
+                    <p>Coach-009-Web! AC_BUsiness</p>
+                  </div>
+                  <div class="mt-16">
+                    <button class="gap-1 -mt-14 flex bg-green-100"><img src="images/seat-green.png" alt="">8 seats left</button>
+                </div>
+                </div>
+                
+            </div>
+            <img src="images/info-devider.png" alt="">
+            <div>
+                <img src="images/fare.png" alt="">
+                <p class="font-bold">550 Taka</p>
+                <p>Per Seat</p>
+            </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
