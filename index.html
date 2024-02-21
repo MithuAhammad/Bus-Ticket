@@ -1,206 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bus-Ticket</title>
 
-    <link rel="stylesheet" href="Styles/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus-Ticket</title>
 
-    <!-- Js scripts -->
-    <script src="Scripts/scripts.js"></script>
+  <link rel="stylesheet" href="Styles/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-  </head>
-  <body>
-    <header class="mx-8">
-        <!-- NAvigation-Section -->
-      <section>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
+  <!-- Js scripts -->
+  <script src="Scripts/scripts.js"></script>
+
+</head>
+
+<body>
+  <header class="mx-8">
+    <!-- NAvigation-Section -->
+    <section>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-xl">P-Ticker</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Destination</a></li>
               <li><a>Search</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn bg-green-300 text-green-600"
-              >Bus <span><img src="./images/bus-icon.png" alt="" /></span
-            ></a>
-          </div>
+          <a class="btn btn-ghost text-xl">P-Ticker</a>
         </div>
-      </section>
-       <!-- End-to-End Travel With -->
-      <section class="rounded-2xl">
-        <div
-          class="hero min-h-screen"
-          style="background-image: url(images/banner.png)"
-        >
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-4xl font-bold">End-to-End Travel With</h1>
-              <h1 class="text-green-600 text-4xl font-bold">P Paribahan</h1>
-              <p class="mb-5">
-                Embarking on a seamless end-to-end travel experience begins with
-                meticulous planning and organization. As the journey unfolds,
-                the initial step involves thorough research to select optimal
-                destinations, accommodations, and transportation modes.
-              </p>
-              <button class="btn text-white bg-green-500 font-bold" onClick="document.getElementById('middle').scrollIntoView();">
-                Buy Tickets
-              </button>
-            </div>
-          </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- Optional part -->
-      <div class="flex -mt-12 justify-center">
-        <section class="mr-4">
-            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
-                <div class="">
-                    <img src="images/people.png" alt="">
-                </div>
-                <div>
-                    <h1 class="font-bold text-black text-2xl">500K+</h1>
-                    <p>Registered</p>
-                </div>
-            </div>
-          </section>
-        <section class="mr-4 ">
-            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
-                <div>
-                    <img src="images/people.png" alt="">
-                </div>
-                <div>
-                    <h1 class="font-bold text-black">500K+</h1>
-                    <p>Registered</p>
-                </div>
-            </div>
-          </section>
-        <section>
-            <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
-                <div>
-                    <img src="images/people.png" alt="">
-                </div>
-                <div>
-                    <h1 class="font-bold text-black">500K+</h1>
-                    <p>Registered</p>
-                </div>
-            </div>
-          </section>
+        <div class="navbar-end">
+          <a class="btn bg-green-300 text-green-600">Bus <span><img src="./images/bus-icon.png" alt="" /></span></a>
+        </div>
       </div>
-
-    </header>
-        <!-- Best Offers Options -->
-    <main class="mx-8">
-        
-        <h1 class="text-center text-4xl font-extrabold mt-24 mb-12">Best offers for you</h1>
-
-        <div class="grid md:grid-cols-2 gap-6">
-             <section class="flex rounded-xl justify-evenly bg-yellow-400">
-                  <div class="mt-16 text-center">
-                    <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
-                    <p class="text-black text-xl font-bold ">on your next purchase</p>
-                    <p class="text-black">use by January 2024</p>
-                  </div>
-                  <img src="images/cupon-devider.png" alt="" />
-                  <div class="">
-                    <h1 class="text-zinc-950 text-3xl font-bold mt-20">NEW15</h1>
-                    <p class="text-zinc-800">Coupon Code</p>
-                  </div>
-                </section>
-              </section>
-        
-              
-                <section class="flex justify-evenly bg-pink-400 rounded-xl">
-                  <div class="mt-16 text-center">
-                    <h1 class="text-black font-extrabold text-4xl">20% OFF</h1>
-                    <p class="text-black text-xl font-bold">on your next purchase</p>
-                    <p class="text-black">use by January 2024</p>
-                  </div>
-                  <img src="images/cupon-devider.png" alt="" />
-                  <div class="mt-16 text-center">
-                    <h1 class="text-zinc-950 text-3xl font-bold mt-2">Couple 20</h1>
-                    <p class="text-zinc-700">Coupon Code</p>
-                  </div>
-                </section>
-            
+    </section>
+    <!-- End-to-End Travel With -->
+    <section class="rounded-2xl">
+      <div class="hero min-h-screen" style="background-image: url(images/banner.png)">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-4xl font-bold">End-to-End Travel With</h1>
+            <h1 class="text-green-600 text-4xl font-bold">P Paribahan</h1>
+            <p class="mb-5">
+              Embarking on a seamless end-to-end travel experience begins with
+              meticulous planning and organization. As the journey unfolds,
+              the initial step involves thorough research to select optimal
+              destinations, accommodations, and transportation modes.
+            </p>
+            <button class="btn text-white bg-green-500 font-bold"
+              onClick="document.getElementById('middle').scrollIntoView();">
+              Buy Tickets
+            </button>
+          </div>
         </div>
-      <div class="text-center mt-9">
-        <button
-        class="btn bg-white text-green-400 border-green-400"
-      >
+      </div>
+    </section>
+
+    <!-- Optional part -->
+    <div class="flex -mt-12 justify-center">
+      <section class="mr-4">
+        <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+          <div class="">
+            <img src="images/people.png" alt="">
+          </div>
+          <div>
+            <h1 class="font-bold text-black text-2xl">500K+</h1>
+            <p>Registered</p>
+          </div>
+        </div>
+      </section>
+      <section class="mr-4 ">
+        <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+          <div>
+            <img src="images/people.png" alt="">
+          </div>
+          <div>
+            <h1 class="font-bold text-black">500K+</h1>
+            <p>Registered</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="bg-white flex justify-evenly border-b-4 p-2 rounded-lg border-b-[#1DD100]">
+          <div>
+            <img src="images/people.png" alt="">
+          </div>
+          <div>
+            <h1 class="font-bold text-black">500K+</h1>
+            <p>Registered</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </header>
+  <!-- Best Offers Options -->
+  <main class="mx-8">
+
+    <h1 class="text-center text-4xl font-extrabold mt-24 mb-12">Best offers for you</h1>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <section class="flex rounded-xl justify-evenly bg-yellow-400">
+        <div class="mt-16 text-center">
+          <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
+          <p class="text-black text-xl font-bold ">on your next purchase</p>
+          <p class="text-black">use by January 2024</p>
+        </div>
+        <img src="images/cupon-devider.png" alt="" />
+        <div class="">
+          <h1 class="text-zinc-950 text-3xl font-bold mt-20">NEW15</h1>
+          <p class="text-zinc-800">Coupon Code</p>
+        </div>
+      </section>
+      </section>
+
+
+      <section class="flex justify-evenly bg-pink-400 rounded-xl">
+        <div class="mt-16 text-center">
+          <h1 class="text-black font-extrabold text-4xl">20% OFF</h1>
+          <p class="text-black text-xl font-bold">on your next purchase</p>
+          <p class="text-black">use by January 2024</p>
+        </div>
+        <img src="images/cupon-devider.png" alt="" />
+        <div class="mt-16 text-center">
+          <h1 class="text-zinc-950 text-3xl font-bold mt-2">Couple 20</h1>
+          <p class="text-zinc-700">Coupon Code</p>
+        </div>
+      </section>
+
+    </div>
+    <div class="text-center mt-9">
+      <button class="btn bg-white text-green-400 border-green-400">
         See All Offers
       </button>
+    </div>
+
+    <!-- P.h Paribahan -->
+    <section class="bg-[#F7F8F8] rounded-t-3xl ">
+      <div class="text-center py-9 rounded-2xl mt-11">
+        <h1 class="font-bold">P.H. Pharibahan</h1>
+        <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+          allow for a
+          streamlined .</p>
       </div>
 
-      <!-- P.h Paribahan -->
-<section class="bg-[#F7F8F8]">
-  <div class="text-center mt-28">
-    <h1 class="font-bold" >P.H. Pharibahan</h1>
-    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-  </div>
+      <!-- Greenline Paribahan -->
+      <div class="flex mx-32 rounded-3xl bg-white">
 
-  <!-- Greenline Paribahan -->
-  <div>
-<div  class="flex mt-16 justify-between text-center bg-white mx-20">
-  <div class="flex gap-3 ml-3 mt-10">
-    <img src="./images/bus-logo.png" alt="">
-   <div> 
-    <h1 class="font-semibold">Greenline Paribahan</h1>
-    <p>Coach-009-Web</p>
-  </div>
-  </div>
+        <div class="mx-8 ">
+          <div class="flex  mt-16 justify-between       text-center bg-white">
+            <div class="flex gap-3 mt-10">
+              <img src="./images/bus-logo.png" alt="">
+              <div class="">
+                <h1 class="font-semibold">Greenline Paribahan</h1>
+                <p>Coach-009-Web</p>
+              </div>
+            </div>
 
-  <div class=" mr-3 mt-10">
-    <button class="flex bg-green-200 border-8 border-green-200 rounded-xl"><img src="./images/seat-green.png" alt="">40 Seats left</button>
-  </div>
-</div>
-   
-  </div>
-  
-</section>
-    
-    </main>
-    <footer></footer>
-  </body>
+            <div class=" mr-3 mt-10">
+              <button class="flex bg-green-200 border-8 border-green-200 rounded-xl"><img src="./images/seat-green.png"
+                  alt="">40 Seats left</button>
+            </div>
+          </div>
+          <div class="mt-5 rounded-3xl py-6 bg-[#F7F8F8]">
+            <div class="flex p-5 justify-between">
+              <p>Route</p>
+              <p>Dhaka - Sylhet</p>
+            </div>
+            <hr>
+            <div class="flex p-5 justify-between">
+              <p>Departure Time</p>
+              <p> 9:00 PM</p>
+            </div>
+            <hr>
+            <div class="flex mt-3 justify-between px-5 rounded-lg gap-3 text-center">
+              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Border Point - Laxmipur</p>
+              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
+              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
+            </div>
+          </div>
+        </div>
+        <img src="./images/info-devider.png" alt="">
+        <div class="mt-32 mx-3">
+          <div><img src="./images/fare.png" alt=""></div>
+          <h1 class="font-bold text-2xl  ">550 Taka</h1>
+          <p>Per Seat</p>
+        </div>
+      </div>
+      <!-- Select Tour seat -->
+      
+    </section>
+
+  </main>
+  <footer></footer>
+</body>
+
 </html>
