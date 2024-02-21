@@ -164,7 +164,7 @@
 
     <!-- P.h Paribahan -->
     <section class="bg-[#F7F8F8] rounded-t-3xl ">
-      <div class="text-center py-9 rounded-2xl mt-11">
+      <div class=" text-center py-9  rounded-2xl mt-11">
         <h1 class="font-bold">P.H. Pharibahan</h1>
         <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
           allow for a
@@ -172,46 +172,47 @@
       </div>
 
       <!-- Greenline Paribahan -->
-      <div class="flex mx-32 rounded-3xl bg-white">
+      <div class="w-">
+        <div class="flex mx-8  rounded-3xl bg-white">
+          <div class="mx-5 w-2/3">
+            <div class="flex mt-4 justify-between       text-center bg-white">
+              <div class="flex gap-3  mt-10">
+                <img src="./images/bus-logo.png" alt="">
+                <div class="">
+                  <h1 class="font-semibold">Greenline Paribahan</h1>
+                  <p>Coach-009-Web</p>
+                </div>
+              </div>
 
-        <div class="mx-8 ">
-          <div class="flex  mt-8 justify-between       text-center bg-white">
-            <div class="flex gap-3 mt-10">
-              <img src="./images/bus-logo.png" alt="">
-              <div class="">
-                <h1 class="font-semibold">Greenline Paribahan</h1>
-                <p>Coach-009-Web</p>
+              <div class=" mr-3 mt-10">
+                <button class="flex bg-green-200 border-8 border-green-200 rounded-xl"><img
+                    src="./images/seat-green.png" alt="">8 Seats left</button>
               </div>
             </div>
-
-            <div class=" mr-3 mt-10">
-              <button class="flex bg-green-200 border-8 border-green-200 rounded-xl"><img src="./images/seat-green.png"
-                  alt="">40 Seats left</button>
+            <div class="mt-5 rounded-3xl py-6 bg-[#F7F8F8]">
+              <div class="flex p-5 justify-between">
+                <p>Route</p>
+                <p>Dhaka - Sylhet</p>
+              </div>
+              <hr>
+              <div class="flex p-5 justify-between">
+                <p>Departure Time</p>
+                <p> 9:00 PM</p>
+              </div>
+              <hr>
+              <div class="flex mt-3 justify-between px-5 rounded-lg gap-3 text-center">
+                <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Border Point - Laxmipur</p>
+                <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
+                <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
+              </div>
             </div>
           </div>
-          <div class="mt-5 rounded-3xl py-6 bg-[#F7F8F8]">
-            <div class="flex p-5 justify-between">
-              <p>Route</p>
-              <p>Dhaka - Sylhet</p>
-            </div>
-            <hr>
-            <div class="flex p-5 justify-between">
-              <p>Departure Time</p>
-              <p> 9:00 PM</p>
-            </div>
-            <hr>
-            <div class="flex mt-3 justify-between px-5 rounded-lg gap-3 text-center">
-              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Border Point - Laxmipur</p>
-              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
-              <p class="bg-[#0307120D] pt-5  h-16 w-80 ">Dropping Point - Bogura</p>
-            </div>
+          <img src="./images/info-devider.png" alt="">
+          <div class="mt-32 mx-9">
+            <div><img src="./images/fare.png" alt=""></div>
+            <h1 class="font-bold text-2xl  ">550 Taka</h1>
+            <p>Per Seat</p>
           </div>
-        </div>
-        <img src="./images/info-devider.png" alt="">
-        <div class="mt-32 mx-3">
-          <div><img src="./images/fare.png" alt=""></div>
-          <h1 class="font-bold text-2xl  ">550 Taka</h1>
-          <p>Per Seat</p>
         </div>
       </div>
       <!-- Select Tour seat -->
@@ -305,13 +306,66 @@
           </div>
 
           <hr>
-
+          <div class="mx-3">
+            <h1 class="font-bold">Passenger Name*</h1>
+            <input type="text" placeholder="Enter your name" class=" mt-2 p-4 border border-zinc-200 rounded-md w-full">
+          </div>
+          <div class="mx-3 mt-6">
+            <h1 class="font-bold">Phone Number*</h1>
+            <input type="number" name="" id="" placeholder="Enter your phone number"
+              class="mt-2 p-4 border border-zinc-200 rounded-md w-full">
+          </div>
+          <div class="mx-3 mt-6">
+            <h1 class="font-bold">Email ID</h1>
+            <input type="email" name="" id="" placeholder="Enter your email id"
+              class="mt-2 p-4 border border-zinc-200 rounded-md w-full">
+          </div>
+          <div class=" mx-3">
+            <button type="button"
+              class="border mt-3 p-4 bg-green-500 rounded-2xl w-full text-white font-bold text-sm">Next</button>
+          </div>
+          <div class="flex justify-between mt-6 mx-2">
+            <p class="underline">Terms and Conditions</p>
+            <p class="underline">Cancellation Policy</p>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
-  <footer></footer>
+
+  <footer class="mx-8 mt-20">
+    <div class="flex justify-evenly py-16 bg-[#030712] text-white">
+      <nav>
+        <h6 class="footer-title">P-Ticket</h6>
+        <p>P-Ticket is a digital platform t make your daily commuting better.</p>
+      </nav>
+
+      <nav class="">
+        <h6 class="footer-title">Download our app</h6>
+        <!-- <a class="link link-hover"><img src="./images/playstore.png" alt=""></a> -->
+        <div class="link link-hover flex border rounded-md p-3 ">
+          <img src="./images/playstore.png" alt="">
+          <div class="">
+            <p>Get it on</p>
+            <p>Google Play</p>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <footer class="footer px-10 py-4 border-t bg-black text-white">
+      <p>@all rights reserved, P-Ticket services limited.2024</p>
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+         <p class="link link-hover">Terms & condition</p>
+         <p class="link link-hover">privacy policy</p>
+         <p class="link link-hover">Return& refund policy</p>
+        </div>
+      </nav>
+    </footer>
+  </footer>
+
 </body>
 
 </html>
