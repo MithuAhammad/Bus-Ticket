@@ -212,10 +212,11 @@
           </div>
         </div>
       </div>
+
       <!-- Select Tour seat -->
       <div class=" flex justify-between mx-32 mt-3 ">
         <!-- Select Your Seat first -->
-        <div class="w-7/12 bg-white mr-5 ">
+        <div class="w-7/12 rounded-l-3xl bg-white mr-5 ">
           <h1 class="font-bold ml-3 my-4">Select Your Seat</h1>
           <hr>
           <div class="flex justify-between my-4">
@@ -238,51 +239,54 @@
 
           <div class="mx-4 grid grid-cols-2 gap-7">
             <div class="grid grid-cols-2 gap-3">
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">A1</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">A2</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">B1</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">B2</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">C1</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">C2</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">D1</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">D2</button>
+              <button id="A1" onclick="ticket('A1')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">A1</button>
+              <button id="A2" onclick="ticket('A2')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">A2</button>
+              <button id="B1" onclick="ticket('B1')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">B1</button>
+              <button id="B2" onclick="ticket('B2')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">B2</button>
+              <button id="C1" onclick="ticket('C1')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">C1</button>
+              <button id="C2" onclick="ticket('C2')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">C2</button>
+              <button id="D1" onclick="ticket('D1')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">D1</button>
+              <button id="D2" onclick="ticket('D2')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">D2</button>
 
             </div>
             <div class="grid grid-cols-2 gap-3">
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">A3</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">A4</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">B3</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">B4</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">C3</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">C4</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">D3</button>
-              <button class="bg-[#F7F8F8] w-28 h-14 rounded-md">D4</button>
+              <button id="A3" onclick="ticket('A3')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">A3</button>
+              <button id="A4" onclick="ticket('A4')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">A4</button>
+              <button id="B3" onclick="ticket('B3')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">B3</button>
+              <button id="B4" onclick="ticket('B4')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">B4</button>
+              <button id="C3" onclick="ticket('C3')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">C3</button>
+              <button id="C4" onclick="ticket('C4')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">C4</button>
+              <button id="D3" onclick="ticket('D3')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">D3</button>
+              <button id="D4" onclick="ticket('D4')" class="bg-[#F7F8F8] w-28 h-14 rounded-md">D4</button>
             </div>
 
           </div>
         </div>
 
         <!-- Select Your Seat Secound -->
-        <div class="w-5/12 bg-[#FFFFFF] ">
-          <h1 class="font-extrabold mx-3 ml-6 my-2">Select Your Seat</h1>
+        <div class="w-5/12 pb-4 -ml-5 bg-[#FFFFFF] rounded-r-3xl">
+          <h1 class="font-extrabold mx-3 ml-6 my-4">Select Your Seat</h1>
           <hr>
           <div class="mx-4 rounded-md mt-3 bg-[#F7F8F8]">
             <div class="">
               <div class="font-bold flex justify-around">
-                <h1>Seat <span class="font-semibold border px-1 bg-green-500 text-white rounded-2xl">6</span></h1>
+                <h1>Seat <span id="totalseat"
+                    class="font-semibold border px-1 bg-green-500 text-white rounded-2xl">0</span></h1>
                 <h1>Class</h1>
                 <h1>Price</h1>
               </div>
               <hr>
-              <div class=" font-normal flex justify-around">
+              <div id="all-seat">
+                <!-- <div class=" font-normal flex justify-around">
                 <h1>C2</h1>
                 <h1>Economoy</h1>
                 <h1>550</h1>
-              </div>
-              <div class=" font-normal flex justify-around">
+              </div> -->
+                <!-- <div class=" font-normal flex justify-around">
                 <h1>C2</h1>
                 <h1>Economoy</h1>
                 <h1>550</h1>
+              </div> -->
               </div>
             </div>
             <hr class="mt-4">
@@ -328,6 +332,20 @@
         </div>
       </div>
     </section>
+    <!-- modal -->
+
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   </main>
 
   <footer class="mx-8">
@@ -362,7 +380,7 @@
     </footer>
   </footer>
 
-<!-- Add js scriipts Here -->
+  <!-- Add js scriipts Here -->
   <script src="./Scripts/scripts.js"></script>
 </body>
 
